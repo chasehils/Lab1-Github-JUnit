@@ -31,7 +31,7 @@ public class BuggyProgram {
        int sum = 0;
        if (start <= end ) {
             for (int i = start; i <= end; i++) {
-                sum = i;
+                sum += i;
             }
        } else {
             for (int i = start; i >= end; i--) {
