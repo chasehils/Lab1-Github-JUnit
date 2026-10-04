@@ -15,6 +15,9 @@ public class BuggyProgram {
 
     // Method 2: loop with array
     public static int sumEvenNumbers(int[] values) {
+        if (values == null) {
+            return 0;
+        }
         int sum = 0;
 
         for (int i = 0; i < values.length; i++) {
