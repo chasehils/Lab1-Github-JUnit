@@ -28,13 +28,17 @@ public class BuggyProgram {
 
     // Method 3: loop with bounds (no array)
     public static int sumRange(int start, int end) {
-        int sum = 0;
-
-        for (int i = start; i <= end; i++) {
-            sum += i;
-        }
-
-        return sum;
+       int sum = 0;
+       if (start <= end ) {
+            for (int i = start; i <= end; i++) {
+                sum = i;
+            }
+       } else {
+            for (int i = start; i >= end; i--) {
+                sum += i;
+            }
+       }
+       return sum;
     }
 
     public static void main(String[] args ){
